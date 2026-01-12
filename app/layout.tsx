@@ -17,6 +17,12 @@ export const metadata: Metadata = {
   description: "Your personal real-time stock analyser",
 };
 
+/**
+ * Root layout component that configures document language, enables dark mode, and applies global fonts.
+ *
+ * @param children - The content to render inside the document body.
+ * @returns An HTML structure with `<html lang="en" class="dark">` and a `<body>` that applies the Geist font CSS variables and the `antialiased` class, containing `children`.
+ */
 export default function RootLayout({
   children,
 }: Readonly<{
